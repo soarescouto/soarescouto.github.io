@@ -4,6 +4,7 @@
         <title>MELHORES LABUBUS DO MUNDO</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="sobre.css">
+        <meta name="viewport" content="width=device-width">
     </head>
     <body>
         <img src="logo da empresa.png" alt="Foto do labubu">
@@ -48,10 +49,15 @@
         <li>Atendimentos por telefone, e-mail e redes sociais</li>
        </ul>
 
-       <h2 class="subtitulo">Contato</h2>
+       <h2 class="titulo">Contato</h2>
+
+       <div class="contato__secao">
+
+       <h3 class="contato__subtitulo">Correspondência</h3>
+
        <small>(todos os dias 24 horas por dia)</small>
 
-       <address>
+       <address class="contato_info">
         labubus Coutinho
         <br>
         Rua Rodrigo Claudio 360
@@ -60,14 +66,30 @@
         <br>
         São Paulo - SP
        </address>
+       </div>
 
-       <h3> Telefones </h3>
+       <div id="contato" class="contato__secao contato__secao--telefone">
+
+       <h3 class="contato__subtitulo teste__negrito"> Telefones </h3>
        <small> (atendemos 24 horas) </small>
+
        <dl>
-        <dt>Pessoas Físicas</dt>
-        <dt><a href="tel://119999-9999">(11) 9999-9999</a></dt>
-        <dt><a href="tel://117777-7777">(11) 7777-7777</a></dt>
-       </dl>
+        <div>
+        <dt class="contato__info-titulo">Pessoas Físicas:</dt>
+        <dt class="contato__info-descricao"><a href="tel://119999-9999">(11) 9999-9999</a></dt>
+        </div>
+
+        <div>
+        <dt class="contato__info-titulo">Pessoa Jurídica:</dt>
+        <dt class="contato__info-descricao"><a href="tel://117777-7777">(11) 7777-7777</a></dt>
+        </div>
+        </dl>
+        </div>
+
+        <footer class="rodape">
+            <img src="logo da empresa.png" alt="logo da empresa" class="rodape__logo">
+            <p class="rodape__copyright"> &copy; Copyright Labubus Coutinho </p>
+        </footer>
     
     </body>
 </html>
